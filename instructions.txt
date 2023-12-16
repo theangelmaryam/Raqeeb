@@ -1,0 +1,118 @@
+--------------------------------------------------------------
+instructions to run server.js:
+--------------------------------------------------------------
+
+install the 'express' module using npm (const express = require("express");):
+npm install express
+
+--------------------------------------------------------------
+
+install the 'googleapis' module (const { google } = require("googleapis");):
+npm install googleapis
+
+--------------------------------------------------------------
+
+install the 'mysql2' module, it used to work with 
+MySQL databases in Node.js (const mysql = require("mysql2");):
+npm install mysql2
+--------------------------------------------------------------
+
+using the 'ws' package to create WebSocket functionality(const WebSocket = require("ws");):
+npm install ws
+
+--------------------------------------------------------------
+
+The http module is a built-in module in Node.js and doesn't 
+require separate installation:
+const http = require("http");
+
+--------------------------------------------------------------
+                          END
+--------------------------------------------------------------
+
+
+--------------------------------------------------------------
+instructions to run ConvertVideo2Frames.py:
+--------------------------------------------------------------
+
+For image processing, install cv2 (OpenCV) Module(import cv2):
+pip install opencv-python
+
+--------------------------------------------------------------
+
+Other libraries/modules ('os' and 'time') are standard Python libraries 
+and don't require separate installations:
+(import os) , (import time)
+
+--------------------------------------------------------------
+                          END
+--------------------------------------------------------------
+
+
+--------------------------------------------------------------
+instructions to run getVideos.py:
+--------------------------------------------------------------
+
+To connect to a MySQL database, install mysql.connector Module(import mysql.connector):
+pip install mysql-connector-python
+
+--------------------------------------------------------------
+
+To download videos from YouTube, install yt_dlp Module(import yt_dlp):
+pip install yt-dlp
+
+--------------------------------------------------------------
+Other libraries/modules ('os' and 'time') are standard Python libraries 
+and don't require separate installations:
+(import os) , (import time)
+
+--------------------------------------------------------------
+                          END
+--------------------------------------------------------------
+
+
+--------------------------------------------------------------
+instructions to run testmodels.py:
+--------------------------------------------------------------
+
+you should have TensorFlow installed
+(from tensorflow.keras.models import load_model)
+(from tensorflow.keras.preprocessing import image)
+(from tensorflow.keras.applications.resnet50 import preprocess_input):
+pip install tensorflow
+
+--------------------------------------------------------------
+
+NumPy is a fundamental library for numerical operations in Python(import numpy as np):
+pip install numpy
+
+--------------------------------------------------------------
+
+To making HTTP requests using the 'requests' library(import requests):
+pip install requests
+
+--------------------------------------------------------------
+
+To connect to a MySQL database, will need the MySQL Connector library(import mysql.connector):
+pip install mysql-connector-python
+
+--------------------------------------------------------------
+
+The 'os' and 'shutil' modules are part of the Python standard library, 
+and they don't require separate installations:
+(import os) , (import time) , (import shutil)
+
+--------------------------------------------------------------
+                          END
+--------------------------------------------------------------
+
+node server.js
+
+cd weights
+python3 getVideos.py
+
+cd weights
+python3 ConvertVideo2Frames.py
+
+cd weights
+python3 testmodels.py

@@ -1,0 +1,377 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #F6F4F3;
+  margin: 80px;
+}
+
+hr {
+  width: 1250px;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: 0;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: black;
+  z-index: 10;
+}
+
+.navbar {
+  padding-left: 50px;
+  padding-right: 50px;
+  /* width: 1200px; */
+  width: 1400px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 0 auto;
+  /* margin-top: 80px; */
+  background-color: #F6F4F3;
+  /* height: 50px; */
+  height: 87.75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-top: -40px; */
+}
+
+.navbar img {
+  width: 100px;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline-block;
+  /* margin-left: 10px; */
+  margin-right: 40px;
+}
+
+.navbar ul li a:hover {
+  background-color: rgb(226, 226, 226);
+  backface-visibility: 10%;
+  border-radius: 10%;
+
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #31241E;
+  font-size: 20px;
+}
+
+#logo {
+  margin-left: 20px;
+  width: 200px;
+  height: 40px;
+}
+
+#homeDiv {
+  width: 100%;
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#leftDiv {
+  width: 60%;
+  float: left;
+  margin-left: 15px;
+}
+
+#rightDiv {
+  width: 40%;
+  float: right;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #31241E;
+  font-size: 37px;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: sans-serif;
+  color: #31241E;
+  font-weight: lighter;
+  font-size: 27px;
+}
+
+h3 {
+  font-family: sans-serif;
+  color: #31241E;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+#home_image {
+  border-radius: 50%;
+  width: 450px;
+  height: 450px;
+}
+
+/* --------------------------------------------------- */
+/* sign up page */
+.form-right-side {
+  size: 50%;
+  float: right;
+  margin: 100px;
+}
+
+.form-left-side {
+  size: 50%;
+  float: left;
+}
+
+form {
+  width: 350px;
+  height: 370px;
+}
+
+input {
+  width: 90%;
+  height: 60px;
+  background-color: #CBBDB4;
+  margin-bottom: 3px;
+  margin-top: 20px;
+  padding-left: 45px;
+  border-radius: 100px;
+  border-style: hidden;
+  font-size: medium;
+}
+
+.username {
+  background-image: url(images/username-icon.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position-x: left;
+  background-position: 10px;
+  backdrop-filter: grayscale(50%);
+}
+
+.password {
+  background-image: url(images/password-icon.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position-x: left;
+  background-position: 10px;
+  backdrop-filter: grayscale(50%);
+}
+
+input::placeholder {
+  color: white;
+  opacity: 0.9;
+}
+
+button {
+  width: 90%;
+  height: 40px;
+  background-color: #E1D9D3;
+  /* margin-bottom: 20px; */
+  margin-top: 20px;
+  border-radius: 100px;
+  border-style: hidden;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a.gray {
+  /* text-align: center; */
+  font-size: smaller;
+  color: gray;
+  text-decoration: none;
+}
+
+/* -------------------------------------------------------- */
+/* login */
+.align-left {
+  margin: 100px;
+}
+
+/* -------------------------------------------------------- */
+/* child */
+#childRecordsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+}
+
+.child {
+  width: 350px;
+  height: 350px;
+  margin-top: 150px;
+  padding-bottom: 150px;
+  border-radius: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+#add-child {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 530px;
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 20%;
+  height: 50px;
+  background-color: #F6F4F3;
+  /* margin-bottom: 20px; */
+  border-radius: 50px;
+  font-size: 20px;
+  border-style: solid;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* -------------------------------------------------------- */
+/* addNewChild */
+.title {
+  padding-top: 120px;
+  padding-bottom: 30px;
+  color: #86644B;
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+/* -------------------------------------------------------- */
+/* history */
+.history-title {
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-bottom: 10px;
+  color: #86644B;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+table {
+  margin-left: 60px;
+}
+
+th,
+td {
+  width: fit-content;
+  padding: 7px;
+  padding-right: 10px;
+  color: gray;
+}
+
+th {
+  background-color: #ccc;
+}
+
+/* -------------------------------------- */
+#logout {
+  width: 30px;
+  height: 30px;
+  margin-bottom: -5px;
+}
+
+/* -------------------------------------- */
+
+#slider-container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  float: left;
+  height: 350px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.imgSlider {
+  width: 100%;
+  height: auto;
+}
+
+.slider-images {
+  width: 50px;
+  height: 50px;
+}
+
+#prev,
+#next {
+  font-family: sans-serif;
+  color: #31241E;
+  font-weight: lighter;
+  position: absolute;
+  top: 540px;
+  font-size: 50px;
+  cursor: pointer;
+  color: #000;
+  transform: translateY(-50%);
+  margin-right: 100px;
+  margin-left: 100px;
+  width: 70px;
+  height: 70px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#prev {
+  left: 10px;
+}
+
+#next {
+  right: 10px;
+}
+
+
+p {
+  padding-left: 100px;
+  padding-bottom: 10px;
+}
+
+/* --------------------------------------------------------------------------------------- */
+.slider-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #717171;
+}
+
+/* ------------------------------------ */
+.inputMess {
+  font-size: 15px;
+}

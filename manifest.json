@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Raqeeb",
+  "version": "1.0",
+  "description": "Protecting children from inappropriate YouTube cartoons.",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "webRequest"
+  ],
+  
+  "action": {
+    "default_icon": {
+      "16": "icons/16x16.png",
+      "48": "icons/48x48.png",
+      "128": "icons/128x128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/16x16.png",
+    "48": "icons/48x48.png",
+    "128": "icons/128x128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
